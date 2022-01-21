@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Prompt', sans-serif;
+  color: white;
+  background-color: #2B2B2B;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow-x: hidden;
+}
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  padding: 100px;
+  width: 100vw;
+  min-height: 70vh;
+}
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width:320px) {
+  .worked-with {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .language-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.align-center {
+  text-align: center;
+}
+
+.subtitle {
+  margin: 10px;
+  text-align: center;
+}
+
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width:481px) {}
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width:641px) {}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:961px) {}
+
+/* big landscape tablets, laptops, and desktops */
+@media (min-width:1025px) {}
+
+/* hi-res laptops and desktops */
+@media (min-width:1281px) {}
+
+
+p {}
+
+.doc-title {
+  font-size: 5rem;
+  padding: 0%;
+  margin: 0%;
+}
+
+.doc-sec-title {
+  font-size: 3rem;
+  padding: 0%;
+  margin: 0%;
+}
+
+.gold {
+  background-color: #BE9923;
+}
+
+.black {
+  background-color: #2B2B2B;
+}
+
+.white {
+  background-color: #ececec;
+  color: #2B2B2B;
+}
+
+.top-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.top-wave svg {
+  position: relative;
+  display: block;
+  width: calc(156% + 1.3px);
+  height: 145px;
+}
+
+.top-wave .shape-fill {
+  fill: #ECECEC;
+}
+
+.sec2-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.sec2-wave svg {
+  position: relative;
+  display: block;
+  width: calc(156% + 1.3px);
+  height: 145px;
+}
+
+.sec2-wave .shape-fill {
+  fill: #2B2B2B;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.worked-with {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "js clang rust"
+    "php cs among";
+}
+
+.clang {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "."
+    "c"
+    "cpp";
+  grid-area: clang;
+}
+
+.img-lang {
+  width: 40px;
+  margin: 20px;
+}
+
+.c {
+  grid-area: c;
+}
+
+.cpp {
+  grid-area: cpp;
+}
+
+.js {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "vue vue-native"
+    "react nxtjs"
+    "react-native node";
+  grid-area: js;
+}
